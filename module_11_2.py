@@ -7,7 +7,7 @@ def introspection_info(obj):
     obj_met = [method for method in attr if callable(getattr(obj, method))]
     obj_mod = obj.__class__.__module__
     itog = {'type': obj_type, 'attributes': attr, 'methods': obj_met,
-         'module': obj_mod},
+         'module': obj_mod}
     return itog
 
 class House:
